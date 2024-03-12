@@ -141,7 +141,6 @@ const updateSubcategoryBySubcategoryId = asyncHandler(async (req, res) => {
     if (!updatedSubcategory) {
       throw new ApiError(404, "Subcategory not found");
     }
-    res.json(updatedSubcategory);
     return res
     .status(200)
     .json(new ApiResponse(200, { updatedSubcategory },"Subcategory updated successfully"));
