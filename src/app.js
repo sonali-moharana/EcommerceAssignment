@@ -21,6 +21,6 @@ app.use(cookieParser());
 import categoryRouter from "./routes/categoryrouter.js";
 
 //declaration routes
-app.use("/api/v1", categoryRouter);
+app.use("/api/v1/app", categoryRouter);
 
 export { app };
