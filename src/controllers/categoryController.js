@@ -81,7 +81,7 @@ const deleteCategory = asyncHandler(async (req, res) => {
 const addSubCategory = asyncHandler(async (req, res) => {
   try {
     const categoryId = req.params.categoryId;
-    const { product, items } = req.body; // Assuming the request body contains both product details and items
+    const { product, items } = req.body;
     const category = await Category.findById(categoryId);
 
     if (!category) {
