@@ -212,11 +212,11 @@ describe('POST /api/v1/app/addCategoryAndSubcategory', () => {
     }
   });
   
-    it('should delete a subcategory by subcategory ID', async () => {
+    it('should delete a subcategory by subcategory ID /deleteSubcategoryBySubcategoryId/:subcategoryId', async () => {
       let config = {
         method: 'delete',
         maxBodyLength: Infinity,
-        url: 'http://localhost:8000/api/v1/app/deleteSubcategoryBySubcategoryId/65f17c2631868905d5da29c3',
+        url: 'http://localhost:8000/api/v1/app/deleteSubcategoryBySubcategoryId/65f17fd3e76ab7442b2f590f',
         headers: {}
       };
   
